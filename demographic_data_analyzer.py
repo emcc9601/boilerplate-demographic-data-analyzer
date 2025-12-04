@@ -1,5 +1,4 @@
-import pandas as pd
-
+import pandas as pd # pyright: ignore[reportMissingModuleSource]
 
 def calculate_demographic_data(print_data=True):
     # Read data from file
