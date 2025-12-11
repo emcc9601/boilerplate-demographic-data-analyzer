@@ -4,4 +4,10 @@ FROM mcr.microsoft.com/devcontainers/base:ubuntu-24.04
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
 
-sudo apt update && sudo apt install python3 -y
+sudo apt update
+sudo apt install python3 -y
+sudo apt install pip -y
+sudo apt install pipx -y
+sudo pipx install pandas --include-deps
+pipx ensurepath
+python -m pip install pandas
